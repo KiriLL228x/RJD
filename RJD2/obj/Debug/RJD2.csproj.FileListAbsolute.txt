@@ -1,0 +1,8 @@
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.AssemblyReference.cache
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.SuggestedBindingRedirects.cache
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD.MainForm.resources
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD.PoezdForm.resources
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.Properties.Resources.resources
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD.RoomForm.resources
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.GenerateResource.cache
+D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.CoreCompileInputs.cache
