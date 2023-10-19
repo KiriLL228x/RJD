@@ -1,4 +1,4 @@
-﻿namespace RJD
+﻿namespace RJD2
 {
     partial class MainForm
     {
@@ -35,7 +35,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.FiltrPanel = new System.Windows.Forms.Panel();
+            this.CityComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -43,17 +44,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.textboxe = new System.Windows.Forms.TextBox();
+            this.FiltrButton = new System.Windows.Forms.Button();
+            this.InfoPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PoezdPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.FiltrPanel.SuspendLayout();
+            this.InfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PoezdPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,29 +66,33 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 50);
             this.panel1.TabIndex = 0;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(294, 13);
+            this.textBox4.Location = new System.Drawing.Point(293, 14);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 22);
+            this.textBox4.Size = new System.Drawing.Size(143, 22);
             this.textBox4.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 13);
+            this.textBox1.Location = new System.Drawing.Point(61, 14);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 22);
+            this.textBox1.Size = new System.Drawing.Size(143, 22);
             this.textBox1.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(642, 7);
+            this.button1.Location = new System.Drawing.Point(643, 7);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 35);
+            this.button1.Size = new System.Drawing.Size(155, 34);
             this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -111,25 +115,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // panel2
+            // FiltrPanel
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 50);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 400);
-            this.panel2.TabIndex = 1;
+            this.FiltrPanel.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.FiltrPanel.Controls.Add(this.CityComboBox);
+            this.FiltrPanel.Controls.Add(this.label6);
+            this.FiltrPanel.Controls.Add(this.label5);
+            this.FiltrPanel.Controls.Add(this.button3);
+            this.FiltrPanel.Controls.Add(this.label4);
+            this.FiltrPanel.Controls.Add(this.label3);
+            this.FiltrPanel.Controls.Add(this.dateTimePicker2);
+            this.FiltrPanel.Controls.Add(this.dateTimePicker1);
+            this.FiltrPanel.Controls.Add(this.textboxe);
+            this.FiltrPanel.Controls.Add(this.FiltrButton);
+            this.FiltrPanel.Controls.Add(this.InfoPanel);
+            this.FiltrPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FiltrPanel.Location = new System.Drawing.Point(0, 50);
+            this.FiltrPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FiltrPanel.Name = "FiltrPanel";
+            this.FiltrPanel.Size = new System.Drawing.Size(800, 400);
+            this.FiltrPanel.TabIndex = 1;
+            // 
+            // CityComboBox
+            // 
+            this.CityComboBox.FormattingEnabled = true;
+            this.CityComboBox.Location = new System.Drawing.Point(199, 6);
+            this.CityComboBox.Name = "CityComboBox";
+            this.CityComboBox.Size = new System.Drawing.Size(129, 24);
+            this.CityComboBox.TabIndex = 16;
             // 
             // label6
             // 
@@ -143,7 +156,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(346, 39);
+            this.label5.Location = new System.Drawing.Point(347, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 14;
@@ -151,9 +164,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(682, 6);
+            this.button3.Location = new System.Drawing.Point(683, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 46);
+            this.button3.Size = new System.Drawing.Size(107, 46);
             this.button3.TabIndex = 6;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -161,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 8);
+            this.label4.Location = new System.Drawing.Point(347, 7);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 13;
@@ -170,7 +184,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 8);
+            this.label3.Location = new System.Drawing.Point(149, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 12;
@@ -179,6 +193,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(189, 39);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(152, 22);
             this.dateTimePicker2.TabIndex = 11;
@@ -186,84 +201,84 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(396, 33);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(152, 22);
             this.dateTimePicker1.TabIndex = 10;
             // 
-            // textBox3
+            // textboxe
             // 
-            this.textBox3.Location = new System.Drawing.Point(199, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(142, 22);
-            this.textBox3.TabIndex = 9;
+            this.textboxe.Location = new System.Drawing.Point(396, 5);
+            this.textboxe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textboxe.Name = "textboxe";
+            this.textboxe.Size = new System.Drawing.Size(143, 22);
+            this.textboxe.TabIndex = 8;
             // 
-            // textBox2
+            // FiltrButton
             // 
-            this.textBox2.Location = new System.Drawing.Point(396, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 22);
-            this.textBox2.TabIndex = 8;
+            this.FiltrButton.Location = new System.Drawing.Point(0, 0);
+            this.FiltrButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FiltrButton.Name = "FiltrButton";
+            this.FiltrButton.Size = new System.Drawing.Size(136, 34);
+            this.FiltrButton.TabIndex = 5;
+            this.FiltrButton.Text = "button2";
+            this.FiltrButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // InfoPanel
             // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 35);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Info;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 66);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 334);
-            this.panel3.TabIndex = 0;
+            this.InfoPanel.BackColor = System.Drawing.SystemColors.Info;
+            this.InfoPanel.Controls.Add(this.pictureBox2);
+            this.InfoPanel.Controls.Add(this.PoezdPictureBox);
+            this.InfoPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InfoPanel.Location = new System.Drawing.Point(0, 66);
+            this.InfoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InfoPanel.Name = "InfoPanel";
+            this.InfoPanel.Size = new System.Drawing.Size(800, 334);
+            this.InfoPanel.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(294, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(293, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(280, 219);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "2poezd";
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.Poezd_Click);
             // 
-            // pictureBox1
+            // PoezdPictureBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 219);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "poezd";
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.PoezdPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PoezdPictureBox.Image")));
+            this.PoezdPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.PoezdPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PoezdPictureBox.Name = "PoezdPictureBox";
+            this.PoezdPictureBox.Size = new System.Drawing.Size(260, 219);
+            this.PoezdPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PoezdPictureBox.TabIndex = 0;
+            this.PoezdPictureBox.TabStop = false;
+            this.PoezdPictureBox.Tag = "poezd";
+            this.PoezdPictureBox.Click += new System.EventHandler(this.Poezd_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.FiltrPanel);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.FiltrPanel.ResumeLayout(false);
+            this.FiltrPanel.PerformLayout();
+            this.InfoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PoezdPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,7 +291,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel FiltrPanel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
@@ -284,12 +299,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textboxe;
+        private System.Windows.Forms.Button FiltrButton;
+        private System.Windows.Forms.Panel InfoPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PoezdPictureBox;
+        private System.Windows.Forms.ComboBox CityComboBox;
     }
 }
 

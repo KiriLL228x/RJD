@@ -6,3 +6,18 @@ D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.Properties.Resources.r
 D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD.RoomForm.resources
 D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.GenerateResource.cache
 D:\Корнилов Кирилл\RJD2\RJD2\obj\Debug\RJD2.csproj.CoreCompileInputs.cache
+E:\RJD-main\RJD2\obj\Debug\RJD2.csproj.AssemblyReference.cache
+E:\RJD-main\RJD2\obj\Debug\RJD2.csproj.SuggestedBindingRedirects.cache
+E:\RJD-main\RJD2\obj\Debug\RJD2.MainForm.resources
+E:\RJD-main\RJD2\obj\Debug\RJD.PoezdForm.resources
+E:\RJD-main\RJD2\obj\Debug\RJD2.Properties.Resources.resources
+E:\RJD-main\RJD2\obj\Debug\RJD.RoomForm.resources
+E:\RJD-main\RJD2\obj\Debug\RJD2.csproj.GenerateResource.cache
+E:\RJD-main\RJD2\obj\Debug\RJD2.csproj.CoreCompileInputs.cache
+E:\RJD-main\RJD2\bin\Debug\RJD2.exe.config
+E:\RJD-main\RJD2\bin\Debug\RJD2.exe
+E:\RJD-main\RJD2\bin\Debug\RJD2.pdb
+E:\RJD-main\RJD2\bin\Debug\MySql.Data.dll
+E:\RJD-main\RJD2\obj\Debug\RJD2.csproj.CopyComplete
+E:\RJD-main\RJD2\obj\Debug\RJD2.exe
+E:\RJD-main\RJD2\obj\Debug\RJD2.pdb

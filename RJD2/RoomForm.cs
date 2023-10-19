@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RJD2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +13,20 @@ namespace RJD
 {
     public partial class RoomForm : Form
     {
-        public RoomForm(string RoomName)
+        public RoomForm(string idRoom)
         {
             InitializeComponent();
-            Text = RoomName;
-            RoomLabel.Text = RoomName;
 
-            RoomPictureBox.Load("../../../Pictures/" + RoomName + ".jpg");
+            List<string> rooms = MainForm.MySelect("SELECT name, adress_pic, id_hotel FROM rooms WHERE id = " + idRoom);
+            List<string> hotel = MainForm.MySelect("SELECT name FROM hotels WHERE id = " + rooms[2]);
+
+            Text = hotel[0] + ": " + rooms[0];
+            RoomLabel.Text = hotel[0] + ": " + rooms[0];
+
+            RoomPictureBox.Load("../../Pictures/" + rooms[1]);
+
         }
 
-        private void InfoRoomPanel_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }
