@@ -13,17 +13,17 @@ namespace RJD
 {
     public partial class RoomForm : Form
     {
-        public RoomForm(string idRoom)
+        public RoomForm(string idMesto)
         {
             InitializeComponent();
 
-            List<string> rooms = MainForm.MySelect("SELECT name, adress_pic, id_hotel FROM rooms WHERE id = " + idRoom);
-            List<string> hotel = MainForm.MySelect("SELECT name FROM hotels WHERE id = " + rooms[2]);
+            List<string> mesta = SQLClass.MySelect("SELECT name, adress_pic, id_poezd FROM mesta WHERE id = " + idMesto);
+            List<string> poezd = SQLClass.MySelect("SELECT name FROM poezda WHERE id = " + mesta[2]);
 
-            Text = hotel[0] + ": " + rooms[0];
-            RoomLabel.Text = hotel[0] + ": " + rooms[0];
+            Text = poezd[0] + ": " + mesta[0];
+            RoomLabel.Text = poezd[0] + ": " + mesta[0];
 
-            RoomPictureBox.Load("../../Pictures/" + rooms[1]);
+            RoomPictureBox.Load("../../Pictures/" + mesta[1]);
 
         }
 

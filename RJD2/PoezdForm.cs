@@ -21,8 +21,8 @@ namespace RJD
 
             InitializeComponent();
 
-            List<string> poezd = MainForm.MySelect("SELECT * FROM poezda WHERE id = " + _idPoezd);
-            List<string> mesta = MainForm.MySelect("SELECT id, name, adress_pic FROM mesta WHERE id_poezd = " + _idPoezd);
+            List<string> poezd = SQLClass.MySelect("SELECT * FROM poezda WHERE id = " + _idPoezd);
+            List<string> mesta = SQLClass.MySelect("SELECT id, name, adress_pic FROM mesta WHERE id_poezd = " + _idPoezd);
 
             #region Выбранная гостиница на панеле HotelPanel 
             Text = poezd[1];
@@ -30,19 +30,6 @@ namespace RJD
             
             PoezdPB.Load("../../Pictures/" + poezd[4]);
             PoezdTextBox.Text = poezd[3];
-            int ratingHotel = Convert.ToInt32(poezd[2]);
-            int x = 415;
-            for (int i = 0; i < ratingHotel; i++)
-            {
-                PictureBox box = new PictureBox();
-                box.Load("../../Pictures/Star.png");
-                box.Location = new Point(x, 70);
-                box.Size = new Size(50, 50);
-                box.SizeMode = PictureBoxSizeMode.Zoom;
-                PoezdPanel.Controls.Add(box);
-
-                x += 55;
-            }
             #endregion
 
             #region Номера выбранной гостиницы на панеле InfoPanel
