@@ -51,9 +51,11 @@ C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.MainForm.resources
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD.PoezdForm.resources
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.Properties.Resources.resources
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.RegForm.resources
-C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD.RoomForm.resources
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.csproj.GenerateResource.cache
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.csproj.CopyComplete
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.exe
 C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.pdb
+C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.AdminMestaForm.resources
+C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD2.AdminBookingForm.resources
+C:\Users\Administrator\Desktop\RJD-main\RJD2\obj\Debug\RJD.MestaForm.resources

@@ -38,15 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.FiltrPanel = new System.Windows.Forms.Panel();
-            this.CityComboBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textboxe = new System.Windows.Forms.TextBox();
             this.FiltrButton = new System.Windows.Forms.Button();
             this.InfoPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -60,7 +52,7 @@
             // 
             // AuthPanel
             // 
-            this.AuthPanel.BackColor = System.Drawing.Color.Red;
+            this.AuthPanel.BackColor = System.Drawing.Color.LightCoral;
             this.AuthPanel.Controls.Add(this.RegButton);
             this.AuthPanel.Controls.Add(this.AdminFormButton);
             this.AuthPanel.Controls.Add(this.HelloLabel);
@@ -73,15 +65,16 @@
             this.AuthPanel.Location = new System.Drawing.Point(0, 0);
             this.AuthPanel.Margin = new System.Windows.Forms.Padding(2);
             this.AuthPanel.Name = "AuthPanel";
-            this.AuthPanel.Size = new System.Drawing.Size(854, 41);
+            this.AuthPanel.Size = new System.Drawing.Size(1370, 85);
             this.AuthPanel.TabIndex = 0;
             // 
             // RegButton
             // 
-            this.RegButton.Location = new System.Drawing.Point(403, 6);
+            this.RegButton.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegButton.Location = new System.Drawing.Point(735, 28);
             this.RegButton.Margin = new System.Windows.Forms.Padding(2);
             this.RegButton.Name = "RegButton";
-            this.RegButton.Size = new System.Drawing.Size(142, 27);
+            this.RegButton.Size = new System.Drawing.Size(177, 28);
             this.RegButton.TabIndex = 11;
             this.RegButton.Text = "Регистрация";
             this.RegButton.UseVisualStyleBackColor = true;
@@ -89,27 +82,30 @@
             // 
             // AdminFormButton
             // 
-            this.AdminFormButton.Location = new System.Drawing.Point(587, 6);
+            this.AdminFormButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AdminFormButton.Location = new System.Drawing.Point(1121, 10);
             this.AdminFormButton.Name = "AdminFormButton";
-            this.AdminFormButton.Size = new System.Drawing.Size(135, 27);
+            this.AdminFormButton.Size = new System.Drawing.Size(54, 64);
             this.AdminFormButton.TabIndex = 10;
-            this.AdminFormButton.Text = "AdminButton";
+            this.AdminFormButton.Text = "🐛";
+            this.AdminFormButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AdminFormButton.UseVisualStyleBackColor = true;
             this.AdminFormButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // HelloLabel
             // 
             this.HelloLabel.AutoSize = true;
-            this.HelloLabel.Location = new System.Drawing.Point(333, 18);
+            this.HelloLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HelloLabel.Location = new System.Drawing.Point(506, 27);
             this.HelloLabel.Name = "HelloLabel";
-            this.HelloLabel.Size = new System.Drawing.Size(35, 13);
+            this.HelloLabel.Size = new System.Drawing.Size(79, 29);
             this.HelloLabel.TabIndex = 9;
             this.HelloLabel.Text = "label7";
             this.HelloLabel.Visible = false;
             // 
             // PassTextBox
             // 
-            this.PassTextBox.Location = new System.Drawing.Point(220, 11);
+            this.PassTextBox.Location = new System.Drawing.Point(310, 34);
             this.PassTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PassTextBox.Name = "PassTextBox";
             this.PassTextBox.Size = new System.Drawing.Size(108, 20);
@@ -117,7 +113,7 @@
             // 
             // LoginTextBox
             // 
-            this.LoginTextBox.Location = new System.Drawing.Point(46, 11);
+            this.LoginTextBox.Location = new System.Drawing.Point(79, 35);
             this.LoginTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(108, 20);
@@ -125,10 +121,11 @@
             // 
             // AuthButton
             // 
-            this.AuthButton.Location = new System.Drawing.Point(727, 6);
+            this.AuthButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthButton.Location = new System.Drawing.Point(1199, 23);
             this.AuthButton.Margin = new System.Windows.Forms.Padding(2);
             this.AuthButton.Name = "AuthButton";
-            this.AuthButton.Size = new System.Drawing.Size(116, 28);
+            this.AuthButton.Size = new System.Drawing.Size(169, 39);
             this.AuthButton.TabIndex = 4;
             this.AuthButton.Text = "Войти";
             this.AuthButton.UseVisualStyleBackColor = true;
@@ -137,126 +134,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(171, 13);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(211, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "Пароль";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(11, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(64, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Логин";
             // 
             // FiltrPanel
             // 
-            this.FiltrPanel.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.FiltrPanel.Controls.Add(this.CityComboBox);
-            this.FiltrPanel.Controls.Add(this.label6);
-            this.FiltrPanel.Controls.Add(this.label5);
+            this.FiltrPanel.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.FiltrPanel.Controls.Add(this.button3);
-            this.FiltrPanel.Controls.Add(this.label4);
-            this.FiltrPanel.Controls.Add(this.label3);
-            this.FiltrPanel.Controls.Add(this.dateTimePicker2);
-            this.FiltrPanel.Controls.Add(this.dateTimePicker1);
-            this.FiltrPanel.Controls.Add(this.textboxe);
             this.FiltrPanel.Controls.Add(this.FiltrButton);
             this.FiltrPanel.Controls.Add(this.InfoPanel);
             this.FiltrPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FiltrPanel.Location = new System.Drawing.Point(0, 41);
+            this.FiltrPanel.Location = new System.Drawing.Point(0, 85);
             this.FiltrPanel.Margin = new System.Windows.Forms.Padding(2);
             this.FiltrPanel.Name = "FiltrPanel";
-            this.FiltrPanel.Size = new System.Drawing.Size(854, 325);
+            this.FiltrPanel.Size = new System.Drawing.Size(1370, 496);
             this.FiltrPanel.TabIndex = 1;
-            // 
-            // CityComboBox
-            // 
-            this.CityComboBox.FormattingEnabled = true;
-            this.CityComboBox.Location = new System.Drawing.Point(149, 5);
-            this.CityComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CityComboBox.Name = "CityComboBox";
-            this.CityComboBox.Size = new System.Drawing.Size(98, 21);
-            this.CityComboBox.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(104, 34);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "label6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 32);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "label5";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(763, 10);
+            this.button3.Location = new System.Drawing.Point(1279, 4);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 37);
             this.button3.TabIndex = 6;
             this.button3.Text = "Найти";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(260, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "label4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(112, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(142, 32);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(115, 20);
-            this.dateTimePicker2.TabIndex = 11;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(297, 27);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            // 
-            // textboxe
-            // 
-            this.textboxe.Location = new System.Drawing.Point(297, 4);
-            this.textboxe.Margin = new System.Windows.Forms.Padding(2);
-            this.textboxe.Name = "textboxe";
-            this.textboxe.Size = new System.Drawing.Size(108, 20);
-            this.textboxe.TabIndex = 8;
             // 
             // FiltrButton
             // 
@@ -270,22 +188,23 @@
             // 
             // InfoPanel
             // 
-            this.InfoPanel.BackColor = System.Drawing.SystemColors.Info;
+            this.InfoPanel.AutoScroll = true;
+            this.InfoPanel.BackColor = System.Drawing.SystemColors.Window;
             this.InfoPanel.Controls.Add(this.pictureBox2);
             this.InfoPanel.Controls.Add(this.PoezdPictureBox);
             this.InfoPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.InfoPanel.Location = new System.Drawing.Point(0, 54);
+            this.InfoPanel.Location = new System.Drawing.Point(0, 46);
             this.InfoPanel.Margin = new System.Windows.Forms.Padding(2);
             this.InfoPanel.Name = "InfoPanel";
-            this.InfoPanel.Size = new System.Drawing.Size(854, 271);
+            this.InfoPanel.Size = new System.Drawing.Size(1370, 450);
             this.InfoPanel.TabIndex = 0;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(220, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(278, 35);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(210, 178);
+            this.pictureBox2.Size = new System.Drawing.Size(230, 180);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -294,10 +213,10 @@
             // 
             // PoezdPictureBox
             // 
-            this.PoezdPictureBox.Location = new System.Drawing.Point(9, 10);
+            this.PoezdPictureBox.Location = new System.Drawing.Point(11, 35);
             this.PoezdPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.PoezdPictureBox.Name = "PoezdPictureBox";
-            this.PoezdPictureBox.Size = new System.Drawing.Size(195, 178);
+            this.PoezdPictureBox.Size = new System.Drawing.Size(230, 180);
             this.PoezdPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PoezdPictureBox.TabIndex = 0;
             this.PoezdPictureBox.TabStop = false;
@@ -308,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 366);
+            this.ClientSize = new System.Drawing.Size(1370, 581);
             this.Controls.Add(this.FiltrPanel);
             this.Controls.Add(this.AuthPanel);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -317,7 +236,6 @@
             this.AuthPanel.ResumeLayout(false);
             this.AuthPanel.PerformLayout();
             this.FiltrPanel.ResumeLayout(false);
-            this.FiltrPanel.PerformLayout();
             this.InfoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PoezdPictureBox)).EndInit();
@@ -334,19 +252,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel FiltrPanel;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textboxe;
         private System.Windows.Forms.Button FiltrButton;
         private System.Windows.Forms.Panel InfoPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox PoezdPictureBox;
-        private System.Windows.Forms.ComboBox CityComboBox;
         private System.Windows.Forms.Label HelloLabel;
         private System.Windows.Forms.Button AdminFormButton;
         private System.Windows.Forms.Button RegButton;

@@ -36,6 +36,7 @@
             // 
             // InfoUsersPanel
             // 
+            this.InfoUsersPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.InfoUsersPanel.Controls.Add(this.label2);
             this.InfoUsersPanel.Controls.Add(this.label1);
             this.InfoUsersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -47,18 +48,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(302, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Фамилия";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(33, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Имя";
             // 
@@ -70,6 +73,7 @@
             this.Controls.Add(this.InfoUsersPanel);
             this.Name = "AdminUsersForm";
             this.Text = "AdminUsersForm";
+            this.Load += new System.EventHandler(this.AdminUsersForm_Load_1);
             this.InfoUsersPanel.ResumeLayout(false);
             this.InfoUsersPanel.PerformLayout();
             this.ResumeLayout(false);

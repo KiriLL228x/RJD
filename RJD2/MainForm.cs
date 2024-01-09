@@ -27,7 +27,7 @@ namespace RJD2
         public MainForm()
         {
             InitializeComponent();
-            Find_Click(null, null);
+            FindButton_Click(null, null);
             AdminFormButton.Visible = false;
 
         }
@@ -51,45 +51,56 @@ namespace RJD2
             pf.ShowDialog();
         }
 
-        private void Find_Click(object sender, EventArgs e)
+        private void labelPoezd_Click(object sender, EventArgs e)
+        {
+            Label lb = (Label)sender;
+            PoezdForm pf = new PoezdForm(lb.Tag.ToString());
+            pf.ShowDialog();
+        }
+        private void FindButton_Click(object sender, EventArgs e)
         {
             List<string> cityes = SQLClass.MySelect("SELECT DISTINCT name FROM cityes ORDER BY name");
 
-            CityComboBox.Items.Clear();
-            CityComboBox.Items.Add("");
-            foreach (string city in cityes)
-                CityComboBox.Items.Add(city);
+            
 
+            string command = "SELECT id, name, adress_pic FROM poezda WHERE 1";
+
+           
+
+           
+            List<string> poezda = SQLClass.MySelect(command);
 
             InfoPanel.Controls.Clear();
-            string command = "SELECT DISTRINC id, name, adress_pic FROM poezda WHERE 1";
-
-            if (CityComboBox.Text != "")
-            {
-                command += " AND name_city = '" + CityComboBox.Text + " ' ";
-            }
-
-            List<string> poezd = SQLClass.MySelect("SELECT id, name, adress_pic FROM poezda");
-
             int x = 20;
-            for (int i = 0; i < poezd.Count; i += 3)
+            for (int i = 0; i < poezda.Count; i += 3)
             {
+                Label lbl = new Label();
+                lbl.Location = new Point(x, 20);
+                lbl.Size = new Size(265, 30);
+                lbl.Font = new Font("Arial Narrow", 13);
+                lbl.Text = poezda[i + 1];
+                lbl.Tag = poezda[i];
+                lbl.Click += new EventHandler(labelPoezd_Click);
+                InfoPanel.Controls.Add(lbl);
+
                 PictureBox pb = new PictureBox();
                 try
                 {
-                    pb.Load("../../Pictures/" + poezd[i + 2]);
+                    pb.Load("../../Pictures/" + poezda[i + 2]);
                 }
                 catch (Exception) { }
                 pb.Location = new Point(x, 60);
                 pb.Size = new Size(270, 184);
                 pb.SizeMode = PictureBoxSizeMode.Zoom;
-                pb.Tag = poezd[i];
+                pb.Tag = poezda[i];
                 pb.Click += new EventHandler(Poezd_Click);
                 InfoPanel.Controls.Add(pb);
 
                 x += 320;
             }
+
         }
+
         private void AuthButton_Click(object sender, EventArgs e)
         {
             List<string> user_date = SQLClass.MySelect("SELECT login, name, family, admin FROM users WHERE login = '" + LoginTextBox.Text + "' AND pass = '" + PassTextBox.Text + "'");

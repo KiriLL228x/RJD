@@ -41,25 +41,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(33, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 13);
+            this.label2.Size = new System.Drawing.Size(200, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Добавление городов в БД";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(10, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(162, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Список городов в БД";
             // 
             // InfoCityPanel
             // 
             this.InfoCityPanel.AutoScroll = true;
-            this.InfoCityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.InfoCityPanel.BackColor = System.Drawing.Color.LightCoral;
             this.InfoCityPanel.Controls.Add(this.label1);
             this.InfoCityPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.InfoCityPanel.Location = new System.Drawing.Point(0, 0);
@@ -80,7 +82,7 @@
             // 
             // AddCityPanel
             // 
-            this.AddCityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AddCityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.AddCityPanel.Controls.Add(this.AddCityButton);
             this.AddCityPanel.Controls.Add(this.label2);
             this.AddCityPanel.Controls.Add(this.CityTextBox);
@@ -106,6 +108,7 @@
             this.Controls.Add(this.AddCityPanel);
             this.Name = "AdminCityForm";
             this.Text = "AdminCityForm";
+            this.Load += new System.EventHandler(this.AdminCityForm_Load);
             this.InfoCityPanel.ResumeLayout(false);
             this.InfoCityPanel.PerformLayout();
             this.AddCityPanel.ResumeLayout(false);

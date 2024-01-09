@@ -18,7 +18,7 @@ namespace RJD2
 
         }
 
-        private void AdminUsersForm_Load(object sender, EventArgs e)
+        private void AdminUsersForm_Load_1(object sender, EventArgs e)
         {
             InfoUsersPanel.Controls.Clear();
             InfoUsersPanel.Controls.Add(label1);
@@ -65,9 +65,12 @@ namespace RJD2
                 {
                     SQLClass.MyUpDate("DELETE FROM users WHERE id = '" + control.Tag + "'");
                     MessageBox.Show("Удаление успешно");
-                    AdminUsersForm_Load(sender, e);
+                    AdminUsersForm_Load_1(sender, e);
                 }
             }
         }
+
+        
+
     }
 }

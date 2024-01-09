@@ -31,5 +31,6 @@ namespace RJD2
                 MessageBox.Show("Пароли не совпадают");
             }
         }
+
     }
 }

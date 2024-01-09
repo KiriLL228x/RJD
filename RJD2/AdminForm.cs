@@ -25,20 +25,31 @@ namespace RJD2
 
         private void AdminPoezdaButton_Click(object sender, EventArgs e)
         {
-            AdminPoezdaForm ahf = new AdminPoezdaForm();
-            ahf.ShowDialog();
+            AdminPoezdaForm apf = new AdminPoezdaForm();
+            apf.ShowDialog();
         }
 
         private void AdminMestaButton_Click(object sender, EventArgs e)
         {
-            AdminMestaForm arf = new AdminMestaForm();
-            arf.ShowDialog();
+            AdminMestaForm amf = new AdminMestaForm();
+            amf.ShowDialog();
         }
 
         private void AdminUsersButton_Click(object sender, EventArgs e)
         {
             AdminUsersForm auf = new AdminUsersForm();
             auf.ShowDialog();
+        }
+
+        private void AdminBookingButton_Click(object sender, EventArgs e)
+        {
+            AdminBookingForm abf = new AdminBookingForm();
+            abf.ShowDialog();
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
